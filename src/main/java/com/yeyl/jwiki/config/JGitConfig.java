@@ -6,8 +6,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class JGitConfig {
 
+    @Value("${github.url}")
+    public static String GithubUrl;
     @Value("${github.username}")
-    private String GithubUsername;
+    public static String GithubUsername;
     @Value("${github.password}")
-    private String GithubPassword;
+    public static String GithubPassword;
 }
