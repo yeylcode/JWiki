@@ -53,11 +53,11 @@ public class JGitUtil {
 
     public static void main(String[] args) throws Exception {
         String uri = "https://github.com/yeylcode/JWikiData.git";
-        String username = "yeylcode";
-        String password = "";
+        String username = "yeyltest";
+        String password = "ghqazwsx4521";
         CredentialsProvider credentialsProvider = getCredentialsProvider(username, password);
 
-        String localDir = "D:/test/test_jgit";
+        String localDir = "D:/test/test_jwiki";
         Git git = getGit(uri, credentialsProvider, localDir);
 //        Git git =Git.open(new File("D:/test/test_jgit/.git"));
         CommitCommand commitCommand = git.commit().setMessage("test commit").setAllowEmpty(true);
