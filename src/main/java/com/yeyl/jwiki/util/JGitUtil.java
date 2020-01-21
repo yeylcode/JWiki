@@ -59,7 +59,6 @@ public class JGitUtil {
 
         String localDir = "D:/test/test_jwiki";
         Git git = getGit(uri, credentialsProvider, localDir);
-//        Git git =Git.open(new File("D:/test/test_jgit/.git"));
         CommitCommand commitCommand = git.commit().setMessage("test commit").setAllowEmpty(true);
         commitCommand.call();
         pull(git, credentialsProvider);
